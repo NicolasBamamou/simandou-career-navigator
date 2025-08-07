@@ -1,73 +1,104 @@
-# Welcome to your Lovable project
+# Simandou Career Navigator
 
-## Project info
+A modern web application for exploring career opportunities in the mining industry, specifically tailored for the Simandou project.
 
-**URL**: https://lovable.dev/projects/9cda7659-c831-412a-bac7-987b0d6ffeb6
+## Project Overview
 
-## How can I edit this code?
+This is a React-based web application that helps users navigate career opportunities, explore job listings, view locations on an interactive map, and manage their career preferences.
 
-There are several ways of editing your application.
+## Getting Started
 
-**Use Lovable**
+### Prerequisites
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/9cda7659-c831-412a-bac7-987b0d6ffeb6) and start prompting.
+- Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+### Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to the project directory
+cd simandou-career-navigator
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Technologies Used
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+This project is built with modern web technologies:
 
-**Use GitHub Codespaces**
+- **Vite** - Build tool and development server
+- **TypeScript** - Type-safe JavaScript
+- **React** - UI library
+- **shadcn/ui** - Modern React component library
+- **Tailwind CSS** - Utility-first CSS framework
+- **React Router** - Client-side routing
+- **Lucide React** - Icon library
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Features
 
-## What technologies are used for this project?
+- 🏠 **Home Page** - Project overview and navigation
+- 💼 **Jobs** - Browse available career opportunities
+- 📍 **Map** - Interactive location explorer
+- ❤️ **Favorites** - Save and manage preferred opportunities
+- 👤 **Profile** - User preferences and settings
 
-This project is built with:
+## Project Structure
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```
+src/
+├── components/        # Reusable UI components
+├── pages/            # Page components
+├── data/             # Static data and configurations
+├── hooks/            # Custom React hooks
+├── lib/              # Utility functions
+└── assets/           # Images and static assets
+```
 
-## How can I deploy this project?
+## Development
 
-Simply open [Lovable](https://lovable.dev/projects/9cda7659-c831-412a-bac7-987b0d6ffeb6) and click on Share -> Publish.
+```sh
+# Run development server
+npm run dev
 
-## Can I connect a custom domain to my Lovable project?
+# Build for production
+npm run build
 
-Yes, you can!
+# Preview production build
+npm run preview
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+# Lint code
+npm run lint
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Deployment
+
+### GitHub Pages (Automatic)
+
+This project is automatically deployed to GitHub Pages using GitHub Actions. Every push to the `main` branch triggers a new deployment.
+
+**Live Demo**: `https://nicolasbamamou.github.io/simandou-career-navigator/`
+
+### Manual Deployment
+
+To deploy manually to other hosting services:
+
+1. Build the project for production:
+   ```sh
+   npm run build
+   ```
+
+2. Deploy the `dist` folder to your preferred hosting service (Netlify, Vercel, etc.)
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test your changes
+5. Submit a pull request
