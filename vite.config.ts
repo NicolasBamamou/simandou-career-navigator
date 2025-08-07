@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command, mode }) => ({
-  base: command === 'build' ? '/simandou-career-navigator/' : '/',
+  base: '/simandou-career-navigator/',
   server: {
     host: "::",
     port: 8080,
@@ -16,5 +16,6 @@ export default defineConfig(({ command, mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+    
   },
 }));
