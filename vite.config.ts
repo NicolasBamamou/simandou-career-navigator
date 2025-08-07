@@ -3,8 +3,8 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
-  base: process.env.NODE_ENV === 'production' ? '/simandou-career-navigator/' : '/',
+export default defineConfig(({ command, mode }) => ({
+  base: command === 'build' ? '/simandou-career-navigator/' : '/',
   server: {
     host: "::",
     port: 8080,
