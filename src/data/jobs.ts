@@ -24,6 +24,7 @@ export interface Job {
   isFavorite?: boolean;
 }
 
+
 export const jobsData: Job[] = [
   {
     id: "geologue",
@@ -31,7 +32,7 @@ export const jobsData: Job[] = [
     category: "Exploration",
     location: "Mine à ciel ouvert - Secteur A",
     education: "Master",
-    image: "/src/assets/engineer.jpg",
+    image: "/simandou-career-navigator/images/Geologue.png",
     description: "Analyse la composition géologique du site minier, identifie les gisements de minerai et optimise les méthodes d'extraction pour maximiser le rendement.",
     certificates: ["Master en Géologie", "Certification HSE", "Permis de conduire poids lourds"],
     prerequisites: {
@@ -66,7 +67,7 @@ export const jobsData: Job[] = [
     category: "Extraction",
     location: "Mine à ciel ouvert - Pit A",
     education: "CAP/BEP",
-    image: "/src/assets/operator.jpg",
+    image: "/simandou-career-navigator/images/operateur pelle.png",
     description: "Conduit et manœuvre des pelles hydrauliques de grande capacité pour l'extraction de minerai et le déblayage des stériles dans les zones d'exploitation.",
     certificates: ["CACES R482", "Certificat de conduite d'engins", "Formation sécurité minière"],
     prerequisites: {
@@ -102,7 +103,7 @@ export const jobsData: Job[] = [
     category: "Sécurité",
     location: "Bureau central - Tous secteurs",
     education: "Master",
-    image: "/src/assets/safety.jpg",
+    image:  "/simandou-career-navigator/images/HSE.png",
     description: "Supervise et coordonne toutes les activités liées à l'hygiène, la sécurité et l'environnement sur l'ensemble du site minier pour garantir la conformité réglementaire.",
     certificates: ["Master HSE/QHSE", "SAMTRAC", "Certification ISO 45001", "Formation gestion crise"],
     prerequisites: {

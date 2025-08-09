@@ -38,7 +38,7 @@ export function JobCard({ job, onFavoriteToggle, onClick }: JobCardProps) {
           src={job.image}
           alt={job.title}
           className={cn(
-            "w-full h-full object-cover transition-all duration-500 group-hover:scale-105",
+            "w-full h-full object-cover object-center transition-transform duration-500 scale-100 group-hover:scale-135",
             imageLoaded ? "opacity-100" : "opacity-0"
           )}
           onLoad={() => setImageLoaded(true)}
