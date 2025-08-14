@@ -14,7 +14,7 @@ export function Header({ onSearchChange, showSearch = true }: HeaderProps) {
     <header className="sticky top-0 z-40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <div className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-smooth">
             <div className="w-8 h-8 gradient-primary rounded-lg flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-sm">S</span>
             </div>
@@ -26,7 +26,7 @@ export function Header({ onSearchChange, showSearch = true }: HeaderProps) {
                 Carrière Professionnel
               </p>
             </div>
-          </div>
+          </Link>
         </div>
 
         {showSearch && (
@@ -43,6 +43,12 @@ export function Header({ onSearchChange, showSearch = true }: HeaderProps) {
         )}
 
         <div className="flex items-center gap-2">
+          <Button variant="ghost" size="sm" asChild className="hidden md:flex">
+            <Link to="/">
+              <Home className="h-4 w-4 mr-2" />
+              Accueil
+            </Link>
+          </Button>
           <Button variant="ghost" size="icon" className="hidden md:flex">
             <Bell className="h-5 w-5" />
           </Button>
