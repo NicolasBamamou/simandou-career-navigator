@@ -1,9 +1,9 @@
 import { Job } from "./types";
-import engineerImage from "@/assets/ingenieur minier.jpeg";
+import engineerImage from "@/assets/mining ingineer.png";
 
 export const ingenieurMinier: Job = {
   id: "ingenieur-minier",
-  title: "Ingénieur Minier",
+  title: "Ingénieur.e Minier",
   category: "Extraction",
   location: "Mine à ciel ouvert - Bureau technique",
   education: "Master",

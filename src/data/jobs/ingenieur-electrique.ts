@@ -1,5 +1,5 @@
 import { Job } from "./types";
-import engineerImage from "@/assets/engineer.jpg";
+import engineerImage from "@/assets/electrical engeneer.png";
 
 export const ingenieurElectrique: Job = {
   id: "ingenieur-electrique",
