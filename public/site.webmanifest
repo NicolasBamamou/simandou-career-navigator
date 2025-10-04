@@ -1,0 +1,23 @@
+{
+  "name": "SIMANDOU2040 - Carrière Professionnel",
+  "short_name": "Simandou Careers",
+  "description": "Découvrez tous les métiers du projet minier Simandou en Guinée",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon-16x16.svg",
+      "sizes": "16x16",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#1a5031",
+  "background_color": "#faf8f1",
+  "orientation": "portrait-primary"
+}
