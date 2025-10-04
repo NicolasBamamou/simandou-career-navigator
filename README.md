@@ -48,6 +48,72 @@ This project is built with modern web technologies:
 - ❤️ **Favorites** - Save and manage preferred opportunities
 - 👤 **Profile** - User preferences and settings
 
+## Deployment
+
+### Netlify Deployment (Recommended)
+
+This project is optimized for Netlify deployment with automatic builds and deployments.
+
+#### Option 1: Deploy via Git (Recommended)
+
+1. **Push your code to GitHub/GitLab**
+   ```bash
+   git add .
+   git commit -m "Prepare for Netlify deployment"
+   git push origin main
+   ```
+
+2. **Connect to Netlify**
+   - Go to [Netlify](https://netlify.com) and sign in
+   - Click "New site from Git" 
+   - Connect your repository
+   - Netlify will automatically detect the build settings from `netlify.toml`
+
+3. **Deploy**
+   - Netlify will automatically build and deploy your site
+   - Your site will be available at `https://your-site-name.netlify.app`
+
+#### Option 2: Manual Deploy
+
+1. **Build the project**
+   ```bash
+   npm run build
+   ```
+
+2. **Deploy to Netlify**
+   - Go to [Netlify](https://netlify.com)
+   - Drag and drop the `dist` folder to the deploy area
+
+#### Environment Variables
+
+The project automatically detects Netlify environment and configures the correct base path. No additional environment variables are needed for basic deployment.
+
+### GitHub Pages Deployment (Alternative)
+
+If you prefer GitHub Pages, the project includes GitHub Actions workflow:
+
+1. **Enable GitHub Pages**
+   - Go to repository Settings > Pages
+   - Select "GitHub Actions" as source
+
+2. **Deploy**
+   - Push to main branch triggers automatic deployment
+   - Site will be available at `https://username.github.io/simandou-career-navigator/`
+
+### Build Configuration
+
+- **Build Command**: `npm run build`
+- **Output Directory**: `dist`
+- **Node Version**: 18
+- **Single Page Application**: ✅ Configured with redirects
+
+### Performance Optimizations
+
+- Code splitting for vendor libraries
+- Asset caching headers
+- Minified and optimized builds
+- Modern JavaScript targeting
+
 ## Project Structure
 
 ```

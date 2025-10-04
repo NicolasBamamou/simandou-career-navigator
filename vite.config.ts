@@ -4,7 +4,8 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command, mode }) => ({
-  base: '/simandou-career-navigator/',
+  // Use different base paths for different environments
+  base: process.env.NETLIFY ? '/' : '/simandou-career-navigator/',
   server: {
     host: "::",
     port: 8080,
@@ -16,6 +17,17 @@ export default defineConfig(({ command, mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
-    
+  },
+  // Netlify-specific optimizations
+  build: {
+    sourcemap: false,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          router: ['react-router-dom'],
+        },
+      },
+    },
   },
 }));

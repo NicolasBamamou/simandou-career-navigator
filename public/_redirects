@@ -1,0 +1,13 @@
+# Netlify redirects for Single Page Application
+# This ensures that all routes are served by index.html for client-side routing
+
+/* /index.html 200
+
+# Optional: Redirect any old GitHub Pages URLs if migrating
+# /simandou-career-navigator/* /# 301
+
+# API redirects (if you add backend APIs later)
+# /api/* https://your-api-url.com/api/:splat 200
+
+# Force HTTPS (optional)
+# http://simandou-career-navigator.netlify.app/* https://simandou-career-navigator.netlify.app/:splat 301!
